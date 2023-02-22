@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Connor Chen</title> <!-- add a cool icon here-->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Connor Chen" />
+    <meta name="description" content="Personal Website!" />
+    <link rel = "stylesheet" href = "styles.css">
+  </head>
+
+  <body>
+    <div class = "flex-container">
+        <div class = "flexbox-item AboutMeButton">
+            <input type= "button"; class = "button"; value = "About Me"; style = "color: grey; font-size: 24px"; onClick="document.getElementById('AboutMe').scrollIntoView();" />
+        </div>
+        <div class =  "flexbox-item WorkButton">
+            <input type= "button"; class = "button"; value = "My Work"; style = "color: grey; font-size: 24px"; onClick="document.getElementById('Work').scrollIntoView();" />
+        </div> 
+        <div class = "flexbox-item ContactButton">
+            <input type= "button"; class = "button"; value = "Contact"; style = "color: grey; font-size: 24px"; onClick="document.getElementById('Contact').scrollIntoView();" />
+        </div>
+    </div>
+    <div class = "grid-container">
+        <div class = "grid-item header"> 
+            <h1 style = "font-size: 110px; font-weight: 100; font-family: Rubik-ExtraBold;">Hi! I'm Connor</h1> 
+            <br>
+            <h2 style = "font-weight: 100;"> Aspiring chef,  Pokemon Go player, <br>CS & Applied Math @ UC Berkeley</h2>
+        </div>
+        <div class = "grid-item SupImage"> 
+            <img src="totoro.jpeg" alt="Totoro" height="450"/>
+        </div>
+        <div class = "grid-item AboutMeImage"> 
+            <img src="connor.jpg" alt="Connor Chen" height="400"/>
+        </div>
+        <div class = "grid-item AboutMe">
+            <h3 style = "font-weight: 200; font-size: 45px"; id = "AboutMe";>About Me</h3>
+            <br>
+            <p style = "font-weight: 100; font-size: 30px">Nice to meet you! My name is Connor Chen <br> and I am a freshmen at UC Berkeley studying <br> CS and Applied Math. During my free time, <br> I enjoy going out to eat, meeting new people, <br> and traveling to new places. Feel free to check <br> out my work below and reach out!  </p>
+        </div>
+        <div class = "grid-item grid-item-2"> 
+            <h5 style = "font-weight: 200; font-size: 45px"; id = "Work">My Work</h5>
+        </div>
+
+        <div class = "grid-item grid-item-3"> 
+            <a><img src="BirthByUS.jpeg" alt="BirthByUS" height="250"/>  </a> 
+            <div id = "Hover">Built a NodeJs backend to interface with a MongoDB database for a pregnancy health app startup that helps women of color manage their health during pregnancy.</div>   
+        </div>
+        <div class = "grid-item grid-item-4"> 
+            <a><img src="Arizona.png" alt="UofA" height="250"/></a>
+            <div id = "Hover">Assisted in the development and implementation of mathematical programming models for power system planning under the advisement of <a target="_blank" href="https://sie.engineering.arizona.edu/faculty-staff/faculty/jianqiang-cheng" style = "font-weight: 100; font-size: 15px">Prof. Jianqiang Cheng</a></div>
+        </div>
+        <div class = "grid-item grid-item-5"> 
+            <h4 style = "font-weight: 180; font-size: 25px"; id = "Contact">I look forward to talking to you!</h4>
+            <h6 style = "font-weight: 100; font-size: 20px">My email is <a href="mailto:connorchen@berkeley.edu" style = "font-weight: 100; font-size: 20px">connorchen@berkeley.edu</a> or contact me through <a target="_blank" href="https://www.linkedin.com/in/connor-chen-780177149/" style = "font-weight: 100; font-size: 20px">Linkedin</a></h6>
+        </div>
+        <div class = "grid-item Questions?">
+            <h4 style = "font-weight: 180; font-size: 25px">Any Questions?</h4>
+            <form id="myForm" action="/action_page.php">
+                Questions: <input type="text" name="Questions"><br><br>
+                <input type="button" onclick="myFunction()" value="Submit form">
+            </form>
+        
+            <script>
+                function myFunction() {
+                alert('Thank you for submitting!');
+                }
+            </script>
+        </div>
+    
+    
+  </body>
+
+</html>
